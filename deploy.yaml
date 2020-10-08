@@ -3,7 +3,7 @@
   connection: local
   gather_facts: no
   tasks:
-    - name: testing connection to local
+    - name: testing connection to local - from github repo
       ping:
 
     - name: GET VM Info
