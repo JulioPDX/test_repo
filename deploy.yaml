@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+    - name: testing connection to local
+      ping:
+
+    - name: GET VM Info
+      azure.azcollection.azure_rm_virtualmachine_info:
+        resource_group: gns3-rg
